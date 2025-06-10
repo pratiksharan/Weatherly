@@ -274,6 +274,8 @@ button:hover {
     margin: 0 auto;
     overscroll-behavior: contain;
     touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
 }
 
 .forecast-card {

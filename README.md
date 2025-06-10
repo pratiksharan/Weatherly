@@ -3,9 +3,9 @@
 **Weatherly** is a responsive weather app that shows the current weather, 12-hour hourly forecast, and 16-day daily forecast based on your location or any searched city.
 
 Built using:
+- ⚙️ HTML, CSS, and JavaScript
 - 🌐 [Open-Meteo API](https://open-meteo.com/) for weather data
 - 🗺️ [Nominatim (OpenStreetMap)](https://nominatim.org/) for reverse geocoding
-- ⚙️ HTML, CSS, and JavaScript (no frameworks)
 
 ## ✨ Features
 

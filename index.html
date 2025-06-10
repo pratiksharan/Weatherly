@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weatherly</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Weatherly</h1>
+
+        <div class="search-container">
+            <input type="text" id="locationInput" placeholder="Enter a city..." />
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div class="current-location">
+            <h2 id="location"></h2>
+        </div>
+
+        <hr class=" section-divider section-divider-top">
+        <p id="loadingMessage" style="display:none;">Locating...</p>
+        <div class="spinner" id="spinner"></div>
+
+        <div class="weather-info">
+            <div class="main-weather-summary">
+                <img id="weatherIcon" class="main-weather-icon" src="" alt="Weather Icon" />
+              <div class="main-weather-info">
+                <div id="temperature" class="main-temp"></div>
+                <div id="feelslike" class="main-feelslike"></div>
+                <div id="description" class="main-desc"></div>
+              </div>
+            </div>
+            <div class="weather-details-cards">
+                <div class="weather-detail-card">
+                    <div class="detail-label">Humidity:</div>
+                    <div class="detail-value" id="humidity">--</div>
+                </div>
+                <div class="weather-detail-card">
+                    <div class="detail-label">Pressure (hPa):</div>
+                    <div class="detail-value" id="pressure">--</div>
+                </div>
+                <div class="weather-detail-card">
+                    <div class="detail-label">UV:</div>
+                    <div class="detail-value" id="uv">--</div>
+                </div>
+                <div class="weather-detail-card">
+                    <div class="detail-label">Rain Prob.:</div>
+                    <div class="detail-value" id="rainprob">--</div>
+                </div>
+                <div class="weather-detail-card">
+                    <div class="detail-label">Precipitation:</div>
+                    <div class="detail-value" id="precip">--</div>
+                </div>
+                <div class="weather-detail-card">
+                    <div class="detail-label">Wind (Kmph):</div>
+                    <div class="detail-value" id="windspeed">--</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-section">
+        <hr class="section-divider section-divider-bottom">
+        <h3 class="forecast-text">Hourly Forecast</h3>
+            <div id="hourly-forecast" class="forecast-cards"></div>
+        <h3 class="forecast-text">Daily Forecast</h3>
+            <div id="daily-forecast" class="forecast-cards daily-forecast-cards"></div>
+        </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

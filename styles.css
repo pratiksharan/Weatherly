@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
 body {
     font-family: 'Segoe UI', monospace, sans-serif;
     background: black;
@@ -13,6 +16,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .container {
@@ -21,7 +25,6 @@ body {
     text-align: center;
     background: black;
     color: white;
-    overflow-x: hidden;
 }
 
 /* Typography */

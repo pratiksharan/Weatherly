@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    overflow-x: hidden;
-}
 body {
     font-family: 'Segoe UI', monospace, sans-serif;
     background: black;
@@ -16,7 +13,6 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .container {
@@ -25,6 +21,7 @@ body {
     text-align: center;
     background: black;
     color: white;
+    overflow-x: hidden;
 }
 
 /* Typography */
@@ -273,9 +270,6 @@ button:hover {
     max-width: 100%;
     margin: 0 auto;
     overscroll-behavior: contain;
-    touch-action: pan-y;
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
 }
 
 .forecast-card {
